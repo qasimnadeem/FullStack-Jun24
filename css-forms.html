@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input,textarea {color:red; }
+        /* input[type=submit]{border-radius: 50px; background-color: red; color: white;
+        font-size: 20px; width:100px;height:100px} */
+        input[type=submit]{border-radius: 5px; background-color: red; color: white;
+        font-size: 20px; width:200px;height:40px}
+        textarea{resize: none;}
+        form{border-style: solid; border-color: blue; border-width: 2px; 
+            width:70%; margin: auto; padding: 10px; column-count: 2;}
+    </style>
+</head>
+<body>
+    <form action="process.php" method="post">
+        <label>Name</label><br>
+        <input type="text" maxlength="10" placeholder="Enter Name" name="username">
+        <br><br>
+        <input type="text" maxlength="10" value="Lhr" name="city">
+        <br><br>
+        <input type="password" title="Password must be 8 characters" name="password">
+        <br><br>
+        <input type="number" min="1" max="10">
+        <br><br>
+        <input type="range" min="1" max="10">
+        <br><br>
+        <input type="date">
+        <br><br>
+        <input type="color" onchange="document.bgColor= this.value">
+        <br><br>
+        <textarea name="comment" rows="5" cols="50"></textarea>
+        <br><br>
+        <input type="radio" name="gender">Male
+        <input type="radio" name="gender">Female
+        <br><br>
+        <input type="checkbox" name="cnic">CNIC
+        <input type="checkbox" name="passport">Passport
+        <br><br>
+        <select>
+            <option>Lahore</option>
+            <optgroup label="Sindh">
+                <option>Karachi</option>
+                <option>Hyderabad</option>
+            </optgroup>
+        </select>
+        <br><br>
+        <input type="text" list="cities">
+        <datalist id="cities">
+            <option>Lahore</option>
+            <option>Karachi</option>
+            <option>Hyderabad</option>
+        </datalist>
+        <br><br>
+        <input type="submit" value="Add">
+    </form>
+
+</body>
+</html>
