@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+    <fieldset style="width:200px">
+        <input type="text" id="value">
+        <br><br>
+        <button onclick="document.getElementById('value').value +='1'">1</button>
+        <button onclick="document.getElementById('value').value +='2'">2</button>
+        <button onclick="document.getElementById('value').value +='3'">3</button>
+        <br><br>
+        <button>4</button>
+        <button>5</button>
+        <button>6</button>
+        <br><br>
+        <button onclick="document.getElementById('value').value +='+'">+</button>
+        <button>-</button>
+        <button onclick="document.getElementById('value').value =eval(document.getElementById('value').value)">=</button>
+    </fieldset>
+</body>
+</html>
