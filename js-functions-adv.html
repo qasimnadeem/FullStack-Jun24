@@ -1,0 +1,45 @@
+<script>
+    //self-calling function
+    // (function(y){
+    //     alert("self called function")
+    // })("yes")
+
+    //function as literal
+    // let f= function(){
+    //     alert("Literal")
+    // }
+    // f()
+
+    //function within function
+    // function outer(){
+    //     alert("outer function")
+    //     let f= function(){
+    //         alert("inner function")
+    //     }
+    //     f()
+    // }
+    // outer()
+
+    //function as parameter
+    // function outer(f){
+    //     alert("outer function")
+        
+    //     f()
+    // }
+    // outer(function(){
+    //         alert("parameter function")
+    // })
+
+    //function as returning value
+    function outer(){
+        alert("outer function")
+        return function(){
+            alert("returned function")
+        }
+    }
+    f= outer()
+    f()
+
+
+
+</script>

@@ -1,0 +1,50 @@
+<script>
+    // class Vehicle{
+
+    // }
+
+    //prototyped OOPs
+    function Vehicle(){
+        this.wheels=4;
+        this.steering= 1;
+        this.getWheels= function(){
+            return this.wheels;
+        }
+        this.setWheels= function(w=0){
+            this.wheels= w;
+        }
+        this.getSteering= () => {return this.steering;}
+        this.setSteering= (s=0) => {this.steering=s;}
+    }
+
+    let v= new Vehicle();
+    document.write("<br>",v.getWheels())
+    v.setWheels(12);
+    document.write("<br>",v.getWheels())
+    document.write("<br>",v.getSteering())
+    v.setSteering(12);
+    document.write("<br>",v.getSteering())
+    let n= new Vehicle();
+    n.setWheels(100);
+    document.write("<br>",n.getWheels())
+
+    Vehicle.prototype.seats= 60;
+    Vehicle.prototype.getSeats= () => {return this.seats;}
+    Vehicle.prototype.setSeats= (se=0) => {this.seats=se;}
+    n.setSeats(50)
+    document.write("<br>",n.getSeats())
+
+    //Modifying builtin Date class
+    let d= new Date();
+    document.write("<br>",d.getFullYear())
+    Date.prototype.fulldate= d.getDate()+"-"+d.getMonth()+"-"+d.getFullYear()
+    document.write("<br>",d.fulldate)
+
+    
+
+    
+
+
+
+
+</script>
